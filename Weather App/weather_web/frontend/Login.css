@@ -1,0 +1,122 @@
+
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Body */
+        body {
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.5s ease;
+            padding: 0 20px;
+        }
+
+        /* Main container */
+        .container {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 40px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Form Header */
+        .form-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-header h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .form-header p {
+            font-size: 18px;
+            color: #ddd;
+        }
+
+        /* Form Inputs */
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #fff;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            font-size: 16px;
+        }
+
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border: 1px solid #ffcc00;
+            outline: none;
+        }
+
+        /* Submit Button */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff9900;
+        }
+
+        /* Links */
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .form-footer a:hover {
+            color: #ff9900;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 350px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                max-width: 90%;
+                padding: 20px;
+            }
+
+            .form-header h1 {
+                font-size: 26px;
+            }
+
+            .form-header p {
+                font-size: 16px;
+            }
+        }
+   
